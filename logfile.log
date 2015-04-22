@@ -1,0 +1,68 @@
+19:16:19,601  INFO main ChatServer:runServer:42 - Server up & ready for connection...
+19:16:46,405  INFO main ChatServer:runServer:42 - Server up & ready for connection...
+19:18:30,527  INFO main ChatServer:runServer:39 - Server up & ready for connection...
+19:19:29,696  INFO main ChatServer:runServer:39 - Server up & ready for connection...
+20:23:56,232  INFO main ChatServer:runServer:39 - Server up & ready for connection...
+20:25:38,180  INFO AWT-EventQueue-0 Client:pingServer:215 - Ping Server.
+20:25:38,216 ERROR AWT-EventQueue-0 Client:pingServer:221 - IOException.
+20:25:40,243  INFO AWT-EventQueue-0 Client:pingServer:215 - Ping Server.
+20:25:40,246  INFO AWT-EventQueue-0 Client:actionPerformed:177 - Server is running
+20:25:40,247  INFO AWT-EventQueue-0 Client:createConnection:128 - ClientUser Name - GREEN
+20:25:40,246  INFO main ChatServer:runServer:42 - Connect a new user.
+20:25:40,250  INFO main ChatServer:runServer:42 - Connect a new user.
+20:25:40,251  INFO AWT-EventQueue-0 Client:createConnection:135 - Connect to URL - 127.0.0.1 and PORT - 12345
+20:25:40,258  INFO Thread-1 ChatServer:addUser:55 - User GREEN has been added to users list.
+20:25:40,258  INFO Thread-1 ServerThread:readSystemMessage:77 - CONNECT USER: GREEN
+20:25:40,993  INFO Thread-1 ServerThread:readSystemMessage:95 - GET USER LIST.
+20:27:10,414  INFO Thread-1 ServerThread:run:35 - Incoming client message: GREEN: yyujruj
+20:27:14,278  INFO AWT-EventQueue-0 Client:closeClient:240 - Close client.
+20:27:14,278  INFO Thread-1 ServerThread:readSystemMessage:85 - EXIT USER: GREEN
+20:27:14,279  INFO Thread-1 ChatServer:removeUser:69 - User GREEN has been removed from users list.
+20:31:06,252  INFO main ChatServer:runServer:39 - Server up & ready for connection...
+20:32:02,416  INFO AWT-EventQueue-0 Client:pingServer:215 - Ping Server.
+20:32:02,456 ERROR AWT-EventQueue-0 Client:pingServer:221 - IOException.
+20:32:04,509  INFO AWT-EventQueue-0 Client:pingServer:215 - Ping Server.
+20:32:04,512  INFO AWT-EventQueue-0 Client:actionPerformed:177 - Server is running
+20:32:04,512  INFO main ChatServer:runServer:42 - Connect a new user.
+20:32:04,545  INFO AWT-EventQueue-0 Client:createConnection:128 - ClientUser Name - Vasja
+20:32:04,547  INFO main ChatServer:runServer:42 - Connect a new user.
+20:32:04,557  INFO AWT-EventQueue-0 Client:createConnection:135 - Connect to URL - 127.0.0.1 and PORT - 12345
+20:32:04,570  INFO Thread-1 ChatServer:addUser:55 - User Vasja has been added to users list.
+20:32:04,571  INFO Thread-1 ServerThread:readSystemMessage:77 - CONNECT USER: Vasja
+20:32:05,140  INFO Thread-1 ServerThread:readSystemMessage:95 - GET USER LIST.
+20:32:21,609  INFO Thread-1 ServerThread:run:35 - Incoming client message: Vasja: hello world
+20:32:21,611  INFO Thread-1 ServerThread:run:35 - Incoming client message: 
+20:33:14,744  INFO AWT-EventQueue-0 Client:pingServer:215 - Ping Server.
+20:33:14,753  INFO main ChatServer:runServer:42 - Connect a new user.
+20:33:14,753  INFO AWT-EventQueue-0 Client:actionPerformed:177 - Server is running
+20:33:14,754  INFO AWT-EventQueue-0 Client:createConnection:128 - ClientUser Name - GREEN
+20:33:14,756  INFO main ChatServer:runServer:42 - Connect a new user.
+20:33:14,758  INFO AWT-EventQueue-0 Client:createConnection:135 - Connect to URL - 127.0.0.1 and PORT - 12345
+20:33:14,765  INFO Thread-3 ChatServer:addUser:55 - User GREEN has been added to users list.
+20:33:14,765  INFO Thread-3 ServerThread:readSystemMessage:77 - CONNECT USER: GREEN
+20:33:15,641  INFO Thread-3 ServerThread:readSystemMessage:95 - GET USER LIST.
+20:33:24,241  INFO Thread-3 ServerThread:run:35 - Incoming client message: GREEN: Heloo
+20:33:30,478  INFO AWT-EventQueue-0 Client:closeClient:240 - Close client.
+20:33:30,478  INFO Thread-1 ServerThread:readSystemMessage:85 - EXIT USER: Vasja
+20:33:30,479  INFO Thread-1 ChatServer:removeUser:69 - User Vasja has been removed from users list.
+20:33:31,401  INFO AWT-EventQueue-0 Client:closeClient:240 - Close client.
+20:33:31,402  INFO Thread-3 ServerThread:readSystemMessage:85 - EXIT USER: GREEN
+20:33:31,402  INFO Thread-3 ChatServer:removeUser:69 - User GREEN has been removed from users list.
+14:20:41,398  INFO main ChatServer:runServer:39 - Server up & ready for connection...
+14:23:37,915  INFO AWT-EventQueue-0 Client:pingServer:215 - Ping Server.
+14:23:37,959 ERROR AWT-EventQueue-0 Client:pingServer:221 - IOException.
+14:23:39,790  INFO AWT-EventQueue-0 Client:pingServer:215 - Ping Server.
+14:23:39,792  INFO AWT-EventQueue-0 Client:actionPerformed:177 - Server is running
+14:23:39,792  INFO main ChatServer:runServer:42 - Connect a new user.
+14:23:39,803  INFO AWT-EventQueue-0 Client:createConnection:128 - ClientUser Name - GREEN
+14:23:39,849  INFO main ChatServer:runServer:42 - Connect a new user.
+14:23:39,850  INFO AWT-EventQueue-0 Client:createConnection:135 - Connect to URL - 127.0.0.1 and PORT - 12345
+14:23:39,870  INFO Thread-1 ChatServer:addUser:55 - User GREEN has been added to users list.
+14:23:39,871  INFO Thread-1 ServerThread:readSystemMessage:77 - CONNECT USER: GREEN
+14:23:41,207  INFO Thread-1 ServerThread:readSystemMessage:95 - GET USER LIST.
+14:23:49,554  INFO Thread-1 ServerThread:run:35 - Incoming client message: GREEN: Hello World
+14:24:29,568  INFO Thread-1 ServerThread:run:35 - Incoming client message: GREEN: Any body home
+14:24:42,238  INFO Thread-1 ServerThread:run:35 - Incoming client message: GREEN: ?
+14:24:43,661  INFO AWT-EventQueue-0 Client:closeClient:240 - Close client.
+14:24:43,662  INFO Thread-1 ServerThread:readSystemMessage:85 - EXIT USER: GREEN
+14:24:43,663  INFO Thread-1 ChatServer:removeUser:69 - User GREEN has been removed from users list.
