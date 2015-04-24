@@ -29,12 +29,12 @@ public class ServerThread extends Thread {
 			String message = null;
 			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			while ((message = bufferedReader.readLine()) != null) {
-				if (getSystemMessage(message)) {
-					readSystemMessage(message);
-				} else {
+//				if (getSystemMessage(message)) {
+//					readSystemMessage(message);
+//				} else {
 					log.info("Incoming client message: " + message);
-					ChatServer.writeMessageInSocket(message);
-				}
+//					ChatServer.writeMessageInSocket(message);
+//				}
 			}
 			socket.close();
 		} catch (IOException e) {
@@ -43,12 +43,13 @@ public class ServerThread extends Thread {
 		}
 	}
 
+/*
 	/**
 	 * This method determines the system messages.
 	 * @param message - message.
 	 * @return boolean.
 	 */
-	private boolean getSystemMessage(String message) {
+/*	private boolean getSystemMessage(String message) {
 		if (message.indexOf("#") == -1) return false;
 		int titleStart = message.indexOf("#");
 		int titleEnd = message.indexOf("[");
@@ -57,13 +58,15 @@ public class ServerThread extends Thread {
 				|| line.equals("#EXIT_USER")
 				|| line.equals("#GET_USER_LIST"))? true : false;
 	}
+*/
 
+/*
 	/**
 	 * This method reads the system messages.
 	 * @param message - message.
 	 * @throws java.io.IOException
 	 */
-	private void readSystemMessage(String message) throws IOException {
+/*	private void readSystemMessage(String message) throws IOException {
 		int titleStart = message.indexOf("#");
 		int titleEnd = message.indexOf("[");
 		String line = message.substring(titleStart, titleEnd);
@@ -96,4 +99,5 @@ public class ServerThread extends Thread {
 			}
 		}
 	}
+*/
 }

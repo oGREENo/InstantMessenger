@@ -35,23 +35,23 @@ public class ClientMessageThread extends Thread {
 		try {
 			bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			while ((message = bufferedReader.readLine()) != null) {
-				if (getSystemMessage(message)) {
-					readSystemMessage(message);
-				} else {
+//				if (getSystemMessage(message)) {
+//					readSystemMessage(message);
+//				} else {
 					ClientChat.addMessageToList("[" + dateFormat.format(date) + "] " + message);
-				}
+//				}
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
-	/**
+/*	/**
 	 * This method determines the system messages.
 	 * @param message - message.
 	 * @return boolean.
 	 */
-	private boolean getSystemMessage(String message) {
+/*	private boolean getSystemMessage(String message) {
 		if (message.indexOf("#") == -1) return false;
 		int titleStart = message.indexOf("#");
 		int titleEnd = message.indexOf("[");
@@ -60,12 +60,14 @@ public class ClientMessageThread extends Thread {
 				|| line.equals("#ADD_TO_USER_LIST")
 				|| line.equals("#DELETE_FROM_USER_LIST"))? true : false;
 	}
+*/
 
+/*
 	/**
 	 * This method reads the system messages.
 	 * @param message - message.
 	 */
-	private void readSystemMessage(String message) {
+/*	private void readSystemMessage(String message) {
 		int titleStart = message.indexOf("#");
 		int titleEnd = message.indexOf("[");
 		String line = message.substring(titleStart, titleEnd);
@@ -92,4 +94,5 @@ public class ClientMessageThread extends Thread {
 			}
 		}
 	}
+*/
 }

@@ -44,40 +44,30 @@ public class ChatServer {
         }
     }
 
-    /**
-     * This method adds user to server.
-     * @param user - user.
-     * @param userThread - user thread.
-     * @throws IOException
-     */
-    public static void addUser(User user, ServerThread userThread) throws IOException {
-        userMap.put(user, userThread);
-        log.info("User " + user + " has been added to users list.");
-//        System.out.println(userMap);
 
-        writeMessageInSocketExceptThisUser(user, "#ADD_TO_USER_LIST" + "[" + user.getName().toString() + "]");
-    }
-
+/*
     /**
      * This method removes user from server.
      * @param user - user.
      * @param userThread - user thread.
      * @throws IOException
      */
-    public static void removeUser(User user, ServerThread userThread) throws IOException {
+/*    public static void removeUser(User user, ServerThread userThread) throws IOException {
         userMap.remove(user);
         log.info("User " + user + " has been removed from users list.");
 //        System.out.println(userMap);
 
         writeMessageInSocketExceptThisUser(user, "#DELETE_FROM_USER_LIST" + "[" + user.getName().toString() + "]");
     }
+*/
 
+/*
     /**
      * This method writes message in a socket.
      * @param message - message.
      * @throws IOException
      */
-    public static void writeMessageInSocket(String message) throws IOException {
+/*    public static void writeMessageInSocket(String message) throws IOException {
         User user;
         ServerThread sT;
         for (Map.Entry entry : userMap.entrySet()) {
@@ -87,14 +77,16 @@ public class ChatServer {
             printWriter.println(message);
         }
     }
+*/
 
+/*
     /**
      * This method writes message in a socket except this user.
      * @param user - user.
      * @param message - message.
      * @throws IOException
      */
-    public static void writeMessageInSocketExceptThisUser(User user, String message) throws IOException {
+/*    public static void writeMessageInSocketExceptThisUser(User user, String message) throws IOException {
         User users;
         ServerThread sT;
         for (Map.Entry entry : userMap.entrySet()) {
@@ -106,7 +98,9 @@ public class ChatServer {
             }
         }
     }
+*/
 
+/*
     /**
      * This method writes message in a socket to this user.
      * @param user - user.
@@ -114,10 +108,11 @@ public class ChatServer {
      * @param serverMessage - message.
      * @throws IOException
      */
-    public static void writeMessageInSockeTotUser(User user, ServerThread st, String serverMessage) throws IOException {
+/*    public static void writeMessageInSockeTotUser(User user, ServerThread st, String serverMessage) throws IOException {
         PrintWriter printWriter = new PrintWriter(new OutputStreamWriter(st.socket.getOutputStream()), true);
         printWriter.println(serverMessage);
     }
+*/
 
     /**
      * This method gets a users list.
@@ -129,7 +124,7 @@ public class ChatServer {
         User users;
         for (Map.Entry entry : userMap.entrySet()) {
             users = (User) entry.getKey();
-            writeMessageInSockeTotUser(user, st, "#SET_USER_LIST" + "[" + users.getName().toString() + "]");
+//            writeMessageInSockeTotUser(user, st, "#SET_USER_LIST" + "[" + users.getName().toString() + "]");
         }
     }
 }

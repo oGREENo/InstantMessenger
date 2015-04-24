@@ -14,7 +14,7 @@ public class MyWindowListener extends WindowAdapter {
 	
 	/**
 	 * This class constructor MyWindowListener.
-	 * @param controller - controller.
+	 * @param client - controller.
 	 */
 	public MyWindowListener(Client client) {
 		this.client = client;

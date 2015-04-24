@@ -1,7 +1,7 @@
 package ua.edu.greenberg.client.view;
 
-import ua.edu.greenberg.client.controller.ButtonNames;
-import ua.edu.greenberg.client.controller.MyActionListener;
+import ua.edu.greenberg.client.controller.Client;
+import ua.edu.greenberg.client.model.ClientUser;
 
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -21,7 +21,7 @@ import javax.swing.JTextField;
 /**
  * This class create a login window.
  */
-public class ClientLogin extends JFrame{
+public class ClientLogin extends JFrame {
 	private static final long serialVersionUID = 101L;
 	private JTextField textLogin;
 	private JTextField textURL;
@@ -81,7 +81,7 @@ public class ClientLogin extends JFrame{
 				GridBagConstraints.HORIZONTAL, new Insets(10, 5, 0, 0), 0, 0));
 		textLogin.addKeyListener(new KeyAdapter() {
 			public void keyTyped(KeyEvent e) {
-				char vChar = e.getKeyChar();
+//				char vChar = e.getKeyChar();
 				if (textLogin.getText().length() >= 12) {
 					e.consume();
 				}
@@ -97,7 +97,7 @@ public class ClientLogin extends JFrame{
 				GridBagConstraints.HORIZONTAL, new Insets(10, 5, 0, 0), 0, 0));
 		textURL.addKeyListener(new KeyAdapter() {
 			public void keyTyped(KeyEvent e) {
-				char vChar = e.getKeyChar();
+//				char vChar = e.getKeyChar();
 				if (textURL.getText().length() >= 15) {
 					e.consume();
 				}
@@ -123,23 +123,41 @@ public class ClientLogin extends JFrame{
 			}
 		});
 		
-		jLoginButton = new JButton(ButtonNames.BUTTON_LOGIN.getTypeValue());
+		jLoginButton = new JButton("Login");
 		panel.add(jLoginButton, new GridBagConstraints(0, 3, 1, 1, 0, 0, GridBagConstraints.EAST,
 				GridBagConstraints.HORIZONTAL, new Insets(10, 0, 0, 0), 0, 0));
+		jLoginButton.addActionListener((new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				if (validData()) {
+					System.out.println("Click \"Login\".");
+					new ClientUser(getName(), getUrl(), getPort());
+					System.out.println("Create client user.");
+
+				} else System.out.println("No valid.");
+
+			}
+		}));
 
 		jCancel = new JButton("Cancel");
 		panel.add(jCancel, new GridBagConstraints(1, 3, 1, 1, 0, 0, GridBagConstraints.EAST,
 				GridBagConstraints.HORIZONTAL, new Insets(10, 35, 0, 0), 0, 0));
 		jCancel.addActionListener(new ActionListener() {
+			@Override
 		     public void actionPerformed(ActionEvent e) {
 		         System.exit(-1);
 		     }
 		});
 	}
 
-	public void addActionListener(ActionListener listener) {
-		jLoginButton.addActionListener(new MyActionListener(this, 0 , listener));
-	}
+
+//	public void addActionListener(ActionListener listener) {
+//		jLoginButton.addActionListener(listener);
+//		___validData()___
+//		___Create new ClientLogin____
+//	}
+
+
 
 	/**
 	 * This method gets a name.

@@ -66,3 +66,52 @@
 14:24:43,661  INFO AWT-EventQueue-0 Client:closeClient:240 - Close client.
 14:24:43,662  INFO Thread-1 ServerThread:readSystemMessage:85 - EXIT USER: GREEN
 14:24:43,663  INFO Thread-1 ChatServer:removeUser:69 - User GREEN has been removed from users list.
+16:36:30,637  INFO main ChatServer:runServer:39 - Server up & ready for connection...
+16:37:07,467  INFO AWT-EventQueue-0 Client:pingServer:215 - Ping Server.
+16:37:07,519 ERROR AWT-EventQueue-0 Client:pingServer:221 - IOException.
+16:37:10,250  INFO AWT-EventQueue-0 Client:pingServer:215 - Ping Server.
+16:37:10,253  INFO AWT-EventQueue-0 Client:actionPerformed:177 - Server is running
+16:37:10,253  INFO main ChatServer:runServer:42 - Connect a new user.
+16:37:10,254  INFO AWT-EventQueue-0 Client:createConnection:128 - ClientUser Name - oGREENo
+16:37:10,256  INFO main ChatServer:runServer:42 - Connect a new user.
+16:37:10,258  INFO AWT-EventQueue-0 Client:createConnection:135 - Connect to URL - 127.0.0.1 and PORT - 12345
+16:37:10,272  INFO Thread-1 ChatServer:addUser:55 - User oGREENo has been added to users list.
+16:37:10,274  INFO Thread-1 ServerThread:readSystemMessage:77 - CONNECT USER: oGREENo
+16:37:11,043  INFO Thread-1 ServerThread:readSystemMessage:95 - GET USER LIST.
+16:37:22,275  INFO Thread-1 ServerThread:run:35 - Incoming client message: oGREENo: hello
+16:37:24,092  INFO AWT-EventQueue-0 Client:closeClient:240 - Close client.
+16:37:24,092  INFO Thread-1 ServerThread:readSystemMessage:85 - EXIT USER: oGREENo
+16:37:24,093  INFO Thread-1 ChatServer:removeUser:69 - User oGREENo has been removed from users list.
+17:01:50,245  INFO main ChatServer:runServer:39 - Server up & ready for connection...
+17:01:57,403  INFO AWT-EventQueue-0 Client:pingServer:215 - Ping Server.
+17:01:57,412  INFO AWT-EventQueue-0 Client:actionPerformed:177 - Server is running
+17:01:57,412  INFO main ChatServer:runServer:42 - Connect a new user.
+17:01:57,413  INFO AWT-EventQueue-0 Client:createConnection:128 - ClientUser Name - ghjfgj
+17:01:57,415  INFO main ChatServer:runServer:42 - Connect a new user.
+17:01:57,417  INFO AWT-EventQueue-0 Client:createConnection:135 - Connect to URL - 127.0.0.1 and PORT - 12345
+17:01:57,420  INFO Thread-1 ServerThread:run:35 - Incoming client message: ghjfgj: #CONNECT_USER[ghjfgj]
+17:01:57,764  INFO Thread-1 ServerThread:run:35 - Incoming client message: ghjfgj: #GET_USER_LIST[ghjfgj]
+17:02:12,300  INFO Thread-1 ServerThread:run:35 - Incoming client message: ghjfgj: hjkfgjf
+18:29:00,794  INFO AWT-EventQueue-0 Client:pingServer:154 - Ping Server.
+18:29:00,896 ERROR AWT-EventQueue-0 Client:pingServer:160 - IOException.
+18:29:08,607  INFO main ChatServer:runServer:39 - Server up & ready for connection...
+18:29:22,064  INFO AWT-EventQueue-0 Client:pingServer:154 - Ping Server.
+18:29:22,073  INFO main ChatServer:runServer:42 - Connect a new user.
+18:50:40,217  INFO AWT-EventQueue-0 Client:pingServer:157 - Ping Server.
+18:50:40,254 ERROR AWT-EventQueue-0 Client:pingServer:163 - IOException.
+18:50:41,651  INFO AWT-EventQueue-0 Client:pingServer:157 - Ping Server.
+18:50:41,654  INFO main ChatServer:runServer:42 - Connect a new user.
+18:51:17,090  INFO AWT-EventQueue-0 Client:pingServer:157 - Ping Server.
+18:51:17,099  INFO main ChatServer:runServer:42 - Connect a new user.
+18:51:27,152  INFO AWT-EventQueue-0 Client:pingServer:157 - Ping Server.
+18:51:27,161  INFO main ChatServer:runServer:42 - Connect a new user.
+18:52:54,352  INFO AWT-EventQueue-0 Client:pingServer:157 - Ping Server.
+18:52:54,361  INFO main ChatServer:runServer:42 - Connect a new user.
+18:53:58,010  INFO AWT-EventQueue-0 Client:pingServer:157 - Ping Server.
+18:53:58,019  INFO main ChatServer:runServer:42 - Connect a new user.
+18:54:03,457  INFO AWT-EventQueue-0 Client:pingServer:157 - Ping Server.
+18:54:03,458  INFO main ChatServer:runServer:42 - Connect a new user.
+18:54:05,237  INFO AWT-EventQueue-0 Client:pingServer:157 - Ping Server.
+18:54:05,239  INFO main ChatServer:runServer:42 - Connect a new user.
+18:55:16,028  INFO AWT-EventQueue-0 Client:pingServer:157 - Ping Server.
+18:55:16,036  INFO main ChatServer:runServer:42 - Connect a new user.

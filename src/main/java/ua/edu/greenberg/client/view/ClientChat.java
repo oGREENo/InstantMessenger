@@ -1,8 +1,5 @@
 package ua.edu.greenberg.client.view;
 
-import ua.edu.greenberg.client.controller.ButtonNames;
-import ua.edu.greenberg.client.controller.MyActionListener;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
@@ -115,7 +112,7 @@ public class ClientChat extends JFrame {
 	 * @param panel - JPanel
 	 */
 	private void createButton(JPanel panel) {
-		jSendButton = new JButton(ButtonNames.BUTTON_SEND.getTypeValue());
+		jSendButton = new JButton("SEND");
 		jSendButton.setPreferredSize(new Dimension(180, 75));
 		panel.add(jSendButton, new GridBagConstraints(0, 0, 1, 1, 0, 0, GridBagConstraints.CENTER,
 				GridBagConstraints.HORIZONTAL, new Insets(0, 5, 10, 5), 0, 0));
@@ -138,7 +135,7 @@ public class ClientChat extends JFrame {
 	 * @param listener  - ActionListener.
 	 */
 	public void addActionListener(ActionListener listener) {
-		jSendButton.addActionListener(new MyActionListener(this, 0 , listener));
+//		jSendButton.addActionListener(listener);
 	}
 
 	/**
